@@ -8,4 +8,5 @@ This template comes with vscode settings to debug right away, for Svelte intelli
 `dotnet new --install Nelsontkq.Svelte`
 
 ## Use the template
+Simply enter this command in a folder
 `dotnet new svelte`
