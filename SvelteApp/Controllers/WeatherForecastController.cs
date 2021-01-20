@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SvelteApp.Models;
+using ClientApp.Models;
 
-namespace SvelteApp.Controllers
+namespace ClientApp.Controllers
 {
     [ApiController]
     [Route("[controller]")]

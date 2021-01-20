@@ -19,14 +19,10 @@ function serve() {
   return {
     writeBundle() {
       if (server) return;
-      server = require("child_process").spawn(
-        "npm",
-        ["run", "start"],
-        {
-          stdio: ["ignore", "inherit", "inherit"],
-          shell: true,
-        }
-      );
+      server = require("child_process").spawn("npm", ["run", "start"], {
+        stdio: ["ignore", "inherit", "inherit"],
+        shell: true,
+      });
 
       process.on("SIGTERM", toExit);
       process.on("exit", toExit);
@@ -75,7 +71,7 @@ export default {
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
-    !production && livereload({ watch: "public", port: 5001 }),
+    !production && livereload({ watch: "public" }),
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify

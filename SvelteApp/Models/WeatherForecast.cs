@@ -1,6 +1,6 @@
 using System;
 
-namespace SvelteApp.Models
+namespace ClientApp.Models
 {
     public class WeatherForecast
     {

@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace SvelteApp
+namespace ClientApp
 {
     public class Startup
     {
@@ -44,7 +44,6 @@ namespace SvelteApp
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())
             {
@@ -71,6 +70,11 @@ namespace SvelteApp
                 {
                     var port = Environment.GetEnvironmentVariable("PORT") ?? "4200";
                     spa.UseProxyToSpaDevelopmentServer($"http://localhost:{port}");
+                }
+                else
+                {
+                    // HTTPS redirection will break Rollup's livereload
+                    app.UseHttpsRedirection();
                 }
             });
         }
