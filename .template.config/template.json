@@ -10,6 +10,6 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "https://github.com/nelsontkq/svelte-template",
+  "sourceName": "https://github.com/nelsontkq/dotnet-svelte-template",
   "preferNameDirectory": false
 }
