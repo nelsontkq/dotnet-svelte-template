@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Forecast } from "./models/forecast";
+  import type { Forecast } from "../models/forecast";
   export let name: string;
   let forecasts: Forecast[] = [];
   fetch("/weatherForecast").then(async (response) => {

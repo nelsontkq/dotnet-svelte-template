@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte SPA</Title>
     <Authors>Nelson Truran</Authors>
