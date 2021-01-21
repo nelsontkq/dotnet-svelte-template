@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte SPA</Title>
     <Authors>Nelson Truran</Authors>
     <Description>Svelte SPA template with hot reloading</Description>
     <RepositoryUrl>https://github.com/nelsontkq/dotnet-svelte-template</RepositoryUrl>
+    <ProjectUrl>https://github.com/nelsontkq/dotnet-svelte-template</ProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>svelte;typescript;api;spa;mvc;</PackageTags>
@@ -15,8 +16,9 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <Language>C#</Language>
   </PropertyGroup>
- 
+
   <ItemGroup>
     <Content Include="SvelteApp/**/*;SvelteApp/*" Exclude="**\bin\**;**\obj\**;**\node_modules\**" />
     <Compile Remove="**\*" />
