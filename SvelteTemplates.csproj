@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="SvelteApp/**/*;SvelteApp/*" Exclude="**\bin\**;**\obj\**;**\node_modules\**" />
+    <Content Include="SvelteApp*/**/*;SvelteApp*/*" Exclude="**\bin\**;**\obj\**;**\node_modules\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
