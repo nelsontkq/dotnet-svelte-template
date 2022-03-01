@@ -13,6 +13,3 @@ This template is ready to debug right away with a simple `dotnet run`, for Svelt
 
 Simply enter this command in a folder to get a ready to run .net core application with a svelte frontend.
 `dotnet new svelte`
-
-Enter the following to include svelte routing
-`dotnet new svelterouting`
