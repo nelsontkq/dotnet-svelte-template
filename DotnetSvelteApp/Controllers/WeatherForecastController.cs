@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-namespace SvelteKit.Controllers;
+namespace DotnetSvelteApp.Controllers;
 
 [ApiController]
 [Route("[controller]")]
