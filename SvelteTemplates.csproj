@@ -16,11 +16,12 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
     <Language>C#</Language>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Svelte*/**/*;Svelte*/*" Exclude="**\bin\**;**\obj\**;**\node_modules\**" />
+    <Content Include="DotnetSvelteApp/**" Exclude="**/bin/**/*.*;**/obj/**/*.*;**/**/node_modules/**/*.*" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
