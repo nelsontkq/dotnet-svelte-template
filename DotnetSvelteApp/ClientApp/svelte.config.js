@@ -66,7 +66,7 @@ const config = {
 				},
 				proxy: {
 					"/api": {
-						target: env.ASPNETCORE_URLS.split(";")[0],
+						target: env.ASPNETCORE_URLS?.split(";")[0] ?? 'https://localhost:44447/',
 						changeOrigin: true,
 						rewrite: path => path.replace(/^\/api/, ''),
 						secure: false,
