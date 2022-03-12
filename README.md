@@ -4,6 +4,11 @@ A [Svelte](https://svelte.dev) template using asp.net 6.0 and hot reloading.
 
 This template is ready to debug right away with a simple `dotnet run`. For Svelte intellisense for VS Code, add the
 [official extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+
+## Using degit
+
+`degit https://github.com/nelsontkq/dotnet-svelte-template/DotnetSvelteApp`
+
 ## Install the Template
 
 `dotnet new --install Nelsontkq.Svelte`
