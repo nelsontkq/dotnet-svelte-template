@@ -13,5 +13,67 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "DotnetSvelteApp"
+  "sourceName": "DotnetSvelteApp",
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        ".template.config/**"
+      ],
+      "modifiers": [
+        {
+          "condition": "(!IndividualLocalAuth)",
+          "exclude": [
+            "Migrations/**",
+            "Controllers/AuthenticateController.cs",
+            "Models/API/**",
+            "Models/Configuration/**",
+            "Models/Data/**",
+            "Models/UserRoles.cs",
+            "Utility/**",
+            "Services/**",
+            "ClientApp/src/lib/**",
+            "ClientApp/src/routes/__layout.svelte",
+            "ClientApp/src/routes/login.svelte",
+            "ClientApp/src/routes/profile.svelte",
+            "**/AUTH_*"
+          ]
+        },
+        {
+          "condition": "(IndividualLocalAuth)",
+          "rename": {
+            "AUTH_appsettings.json": "appsettings.json",
+            "AUTH_appsettings.Development.json": "appsettings.Development.json",
+            "AUTH_DotnetSvelteApp.csproj": "DotnetSvelteApp.csproj",
+            "AUTH_Program.cs": "Program.cs",
+            "ClientApp/src/routes/AUTH_index.svelte": "index.svelte",
+            "Controllers/AUTH_WeatherForecastController.cs": "WeatherForecastController.cs"
+          }
+        }
+      ]
+    }
+  ],
+  "symbols": {
+    "auth": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "None",
+          "description": "No authentication"
+        },
+        {
+          "choice": "Individual",
+          "description": "Individual authentication"
+        }
+      ],
+      "defaultValue": "None",
+      "description": "The type of authentication to use"
+    },
+    "IndividualLocalAuth": {
+      "type": "computed",
+      "value": "(auth == \"Individual\")"
+    }
+  }
 }

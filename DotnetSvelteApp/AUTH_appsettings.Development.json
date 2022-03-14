@@ -1,0 +1,21 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning"
+    }
+  },
+  "JWT": {
+    "ValidAudience": "https://localhost:7080",
+    "ValidIssuer": "https://localhost:7080",
+    "Secret": "This is for testing. use a more secure storage method in prod"
+  },
+  "Smtp": {
+    "Sender": "noreply@example.com",
+    "Host": "smtp.gmail.com",
+    "Port": 587,
+    "UserName": "user@example.com",
+    "Password": "password123!@#"
+  }
+}
