@@ -58,17 +58,17 @@ const config = {
 			server: {
 				port: env.ASPNETCORE_HTTPS_PORT ? env.ASPNETCORE_HTTPS_PORT : '44447',
 				https: {
-					ca: certFilePath,
+					cert: certFilePath,
 					key: keyFilePath,
+
 				},
 				headers: {
 					Connection: 'Keep-Alive'
 				},
 				proxy: {
 					"/api": {
-						target: env.ASPNETCORE_URLS.split(";")[0],
+						target: env.ASPNETCORE_URLS?.split(";")[0] ?? "https://localhost:7080/",
 						changeOrigin: true,
-						rewrite: path => path.replace(/^\/api/, ''),
 						secure: false,
 					}
 				}
