@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using DotnetSvelteAuthApp.Models.Data;
-using DotnetSvelteAuthApp.Utility.Middleware;
+using DotnetSvelteApp.Models.Data;
+using DotnetSvelteApp.Utility.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotnetSvelteAuthApp.Models.Data;
+namespace DotnetSvelteApp.Models.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
@@ -14,7 +14,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-        builder.Entity<IdentityRole>().HasData(DotnetSvelteAuthApp.Models.UserRoles.AllRoles.Select(a => new IdentityRole
+        builder.Entity<IdentityRole>().HasData(DotnetSvelteApp.Models.UserRoles.AllRoles.Select(a => new IdentityRole
         {
             Name = a,
             NormalizedName = a.ToUpper()

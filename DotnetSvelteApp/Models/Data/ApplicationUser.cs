@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Identity;
 
-namespace DotnetSvelteAuthApp.Models.Data;
+namespace DotnetSvelteApp.Models.Data;
 
 /// <inheritdoc />
 public class ApplicationUser : IdentityUser

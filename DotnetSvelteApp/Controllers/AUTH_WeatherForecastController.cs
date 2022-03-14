@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using DotnetSvelteAuthApp.Models;
+using DotnetSvelteApp.Models;
 
-namespace DotnetSvelteAuthApp.Controllers;
+namespace DotnetSvelteApp.Controllers;
 
 [Authorize(Roles = UserRoles.User)]
 [ApiController]

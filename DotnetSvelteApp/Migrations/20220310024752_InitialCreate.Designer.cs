@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using DotnetSvelteAuthApp.Models.Data;
+using DotnetSvelteApp.Models.Data;
 
 #nullable disable
 
-namespace DotnetSvelteAuthApp.Migrations
+namespace DotnetSvelteApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20220310024752_InitialCreate")]
@@ -147,7 +147,7 @@ namespace DotnetSvelteAuthApp.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("DotnetSvelteAuthApp.Models.Data.ApplicationUser", b =>
+            modelBuilder.Entity("DotnetSvelteApp.Models.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
@@ -222,7 +222,7 @@ namespace DotnetSvelteAuthApp.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("DotnetSvelteAuthApp.Models.Data.ApplicationUser", null)
+                    b.HasOne("DotnetSvelteApp.Models.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -231,7 +231,7 @@ namespace DotnetSvelteAuthApp.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("DotnetSvelteAuthApp.Models.Data.ApplicationUser", null)
+                    b.HasOne("DotnetSvelteApp.Models.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -246,7 +246,7 @@ namespace DotnetSvelteAuthApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DotnetSvelteAuthApp.Models.Data.ApplicationUser", null)
+                    b.HasOne("DotnetSvelteApp.Models.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -255,7 +255,7 @@ namespace DotnetSvelteAuthApp.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("DotnetSvelteAuthApp.Models.Data.ApplicationUser", null)
+                    b.HasOne("DotnetSvelteApp.Models.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

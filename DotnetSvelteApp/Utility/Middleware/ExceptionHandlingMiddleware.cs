@@ -1,4 +1,4 @@
-namespace DotnetSvelteAuthApp.Utility.Middleware;
+namespace DotnetSvelteApp.Utility.Middleware;
 
 public class ExceptionHandlingMiddleware
 {

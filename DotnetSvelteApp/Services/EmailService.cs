@@ -1,8 +1,8 @@
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using DotnetSvelteAuthApp;
-using DotnetSvelteAuthApp.Models.Data;
+using DotnetSvelteApp;
+using DotnetSvelteApp.Models.Data;
 
 public interface IEmailService
 {
@@ -31,7 +31,7 @@ public class EmailService : IEmailService
     public Task<string> SendVerificationEmail(ApplicationUser user, string token)
     {
         var message = new MimeMessage();
-        message.Subject = "Verify your email for DotnetSvelteAuthApp";
+        message.Subject = "Verify your email for DotnetSvelteApp";
         message.Sender = MailboxAddress.Parse(_config.Sender);
         message.From.Add(message.Sender);
         message.To.Add(MailboxAddress.Parse(user.Email));

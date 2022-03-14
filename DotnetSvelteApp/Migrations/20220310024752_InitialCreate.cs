@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DotnetSvelteAuthApp.Migrations
+namespace DotnetSvelteApp.Migrations
 {
     public partial class InitialCreate : Migration
     {

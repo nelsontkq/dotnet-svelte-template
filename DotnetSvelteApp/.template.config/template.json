@@ -42,6 +42,17 @@
         },
         {
           "condition": "(IndividualLocalAuth)",
+          "exclude": [
+            "appsettings.json",
+            "appsettings.Development.json",
+            "DotnetSvelteApp.csproj",
+            "Program.cs",
+            "ClientApp/src/routes/index.svelte",
+            "Controllers/WeatherForecastController.cs"
+          ]
+        },
+        {
+          "condition": "(IndividualLocalAuth)",
           "rename": {
             "AUTH_appsettings.json": "appsettings.json",
             "AUTH_appsettings.Development.json": "appsettings.Development.json",

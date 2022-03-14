@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace DotnetSvelteAuthApp.Migrations
+namespace DotnetSvelteApp.Migrations
 {
     public partial class AddUserRoles : Migration
     {

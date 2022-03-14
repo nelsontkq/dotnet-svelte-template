@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 
-namespace DotnetSvelteAuthApp;
+namespace DotnetSvelteApp;
 
 // TODO: replace with a real template engine
 public static class EmailTemplateEngine

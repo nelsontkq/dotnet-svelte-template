@@ -1,4 +1,4 @@
-namespace DotnetSvelteAuthApp.Models;
+namespace DotnetSvelteApp.Models;
 
 public static class UserRoles
 {
