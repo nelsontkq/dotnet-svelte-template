@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { Forecast } from './forecast';
-
-    import { variables } from '$lib/variables';
+	import type { Forecast } from '$lib/forecast';
 	export let name: string = 'Svelte';
 	let error: string;
 	const response: Promise<Forecast[]> = fetch('api/weatherForecast').then((response) => {
 		if (response.status === 404) {
 			error = 'Server unreachable';
+		} else if (response.status === 401) {
+			error = 'Unauthorized - please login';
 		} else {
 			return response.json();
 		}
