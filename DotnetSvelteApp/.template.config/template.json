@@ -47,8 +47,8 @@
             "AUTH_appsettings.Development.json": "appsettings.Development.json",
             "AUTH_DotnetSvelteApp.csproj": "DotnetSvelteApp.csproj",
             "AUTH_Program.cs": "Program.cs",
-            "ClientApp/src/routes/AUTH_index.svelte": "index.svelte",
-            "Controllers/AUTH_WeatherForecastController.cs": "WeatherForecastController.cs"
+            "ClientApp/src/routes/AUTH_index.svelte": "ClientApp/src/routes/index.svelte",
+            "Controllers/AUTH_WeatherForecastController.cs": "Controllers/WeatherForecastController.cs"
           }
         }
       ]
