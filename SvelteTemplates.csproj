@@ -12,12 +12,12 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>svelte;typescript;api;spa;mvc;</PackageTags>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoDefaultExcludes>true</NoDefaultExcludes>
-    <Language>C#</Language>
+    <Language>C#;Web</Language>
   </PropertyGroup>
 
   <ItemGroup>
