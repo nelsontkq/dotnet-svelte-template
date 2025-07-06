@@ -19,10 +19,7 @@ var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
-
-app.MapFallbackToFile("index.html");
-
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/api/weatherforecast", () =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
@@ -35,5 +32,8 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+// Anything that doesn't match the above routes will be sent to the client.
+app.MapFallbackToFile("index.html");
 
 app.Run();
