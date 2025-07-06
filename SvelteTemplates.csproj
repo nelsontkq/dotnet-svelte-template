@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.1.4</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte</Title>
     <Authors>nelson</Authors>
-    <Description>Latest Svelte template.</Description>
+    <Description>Svelte 5 template</Description>
     <RepositoryUrl>https://github.com/nelsontkq/dotnet-svelte-template</RepositoryUrl>
     <ProjectUrl>https://github.com/nelsontkq/dotnet-svelte-template</ProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
