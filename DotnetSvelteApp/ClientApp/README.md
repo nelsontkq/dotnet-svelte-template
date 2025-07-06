@@ -1,38 +1,18 @@
-# sv
+# Svelte Frontend
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the Svelte frontend for the .NET application. It uses SvelteKit with TypeScript and Vite.
 
-## Creating a project
+## Development
 
-If you're seeing this, you've probably already done this step. Congrats!
+The frontend is integrated with the .NET backend. To start development:
 
-```bash
-# create a new project in the current directory
-npx sv create
+1. Run the .NET application from the root directory:
+   ```bash
+   dotnet run
+   ```
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+2. The Svelte development server will start automatically with hot reloading.
 
 ## Building
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The frontend build is handled by the .NET build process. No separate build step is needed.

@@ -9,6 +9,7 @@
     <RepositoryUrl>https://github.com/nelsontkq/dotnet-svelte-template</RepositoryUrl>
     <ProjectUrl>https://github.com/nelsontkq/dotnet-svelte-template</ProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>svelte;typescript;api;spa;mvc;ssr;sveltekit</PackageTags>
     <TargetFramework>net9.0</TargetFramework>
