@@ -23,6 +23,7 @@
   <ItemGroup>
     <Content Include="DotnetSvelteApp/**" Exclude="**/bin/**/*.*;**/obj/**/*.*;**/**/node_modules/**/*.*" />
     <Compile Remove="**\*" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
