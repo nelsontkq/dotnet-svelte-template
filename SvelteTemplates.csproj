@@ -6,7 +6,7 @@
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte</Title>
     <Authors>nelson</Authors>
-    <Description>Svelte templates with hot reloading.</Description>
+    <Description>Latest Svelte template.</Description>
     <RepositoryUrl>https://github.com/nelsontkq/dotnet-svelte-template</RepositoryUrl>
     <ProjectUrl>https://github.com/nelsontkq/dotnet-svelte-template</ProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
