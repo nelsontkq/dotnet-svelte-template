@@ -2,22 +2,22 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.1.3</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte</Title>
-    <Authors>Nelson Truran</Authors>
-    <Description>Svelte templates with hot reloading.</Description>
+    <Authors>nelson</Authors>
+    <Description>Svelte 5 template</Description>
     <RepositoryUrl>https://github.com/nelsontkq/dotnet-svelte-template</RepositoryUrl>
     <ProjectUrl>https://github.com/nelsontkq/dotnet-svelte-template</ProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>Git</RepositoryType>
-    <PackageTags>svelte;typescript;api;spa;mvc;</PackageTags>
-    <TargetFramework>net6.0</TargetFramework>
+    <PackageTags>svelte;typescript;api;spa;mvc;ssr;sveltekit</PackageTags>
+    <TargetFramework>net9.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoDefaultExcludes>true</NoDefaultExcludes>
-    <Language>C#</Language>
+    <Language>C#;Web</Language>
   </PropertyGroup>
 
   <ItemGroup>
