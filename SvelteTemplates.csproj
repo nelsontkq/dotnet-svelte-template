@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.2.0</PackageVersion>
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte</Title>
     <Authors>nelson</Authors>
