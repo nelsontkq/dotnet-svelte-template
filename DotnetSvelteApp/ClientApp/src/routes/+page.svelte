@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { Forecast } from './forecasts/forecast';
 	export let name: string = 'Svelte';
 </script>
 
@@ -20,7 +19,6 @@
 		margin: 0 auto;
 	}
 	h1,
-	h2,
 	th {
 		color: #ff3e00;
 		font-weight: 400;

@@ -1,15 +1,33 @@
 <script lang="ts">
-	import type { Forecast } from './forecast';
+	import type { Forecast } from '$lib/forecast';
 
-    import { variables } from '$lib/variables';
-	export let name: string = 'Svelte';
-	let error: string;
-	const response: Promise<Forecast[]> = fetch('api/weatherForecast').then((response) => {
-		if (response.status === 404) {
-			error = 'Server unreachable';
-		} else {
-			return response.json();
-		}
+	let { name = 'Svelte' } = $props();
+
+	let error = $state<string>('');
+	let forecasts = $state<Forecast[]>([]);
+	let loading = $state(true);
+
+	// Use $effect to handle the async fetch
+	$effect(() => {
+		fetch('api/weatherForecast')
+			.then((response) => {
+				if (response.status === 404) {
+					error = 'Server unreachable';
+					loading = false;
+				} else {
+					return response.json();
+				}
+			})
+			.then((data: Forecast[]) => {
+				if (data) {
+					forecasts = data;
+				}
+				loading = false;
+			})
+			.catch(() => {
+				error = 'Failed to fetch forecast';
+				loading = false;
+			});
 	});
 </script>
 
@@ -21,11 +39,19 @@
 	</p>
 	<h2>Today's Forecast</h2>
 	<table>
-		<th>Date</th>
-		<th>Temperature (C)</th>
-		<th>Summary</th>
-		{#await response then forecasts}
-			{#if error}
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Temperature (C)</th>
+				<th>Summary</th>
+			</tr>
+		</thead>
+		<tbody>
+			{#if loading}
+				<tr>
+					<td colspan="3">Loading...</td>
+				</tr>
+			{:else if error}
 				<tr>
 					<td colspan="3">{error}</td>
 				</tr>
@@ -38,7 +64,7 @@
 					</tr>
 				{/each}
 			{/if}
-		{/await}
+		</tbody>
 	</table>
 </main>
 

@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.1.3</PackageVersion>
+    <PackageVersion>1.1.4</PackageVersion>
     <PackageId>Nelsontkq.Svelte</PackageId>
     <Title>Svelte</Title>
-    <Authors>Nelson Truran</Authors>
+    <Authors>nelson</Authors>
     <Description>Svelte templates with hot reloading.</Description>
     <RepositoryUrl>https://github.com/nelsontkq/dotnet-svelte-template</RepositoryUrl>
     <ProjectUrl>https://github.com/nelsontkq/dotnet-svelte-template</ProjectUrl>
